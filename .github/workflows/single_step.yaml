@@ -1,11 +1,14 @@
 name: First Action - Single
 on:
   workflow_dispatch:
-jobs:
-  hello-world:
-    runs-on: ubuntu-latest
-    steps:
-    - name: First Step
-      run: echo "Hello World"
-    - name: Second Step
-      run: echo "Hello Juan"
+    inputs:
+      debug_mode:
+        type: boolean
+        description: Debug
+        default: false
+        required: false
+      sample_value:
+        type: string
+        description: Cualquier valor
+        default: ""
+        required: false  
