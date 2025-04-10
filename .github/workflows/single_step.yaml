@@ -5,5 +5,7 @@ jobs:
   hello-world:
     runs-on: ubuntu-latest
     steps:
-    - name: Fist Step
+    - name: First Step
       run: echo "Hello World"
+    - name: Second Step
+      run: echo "Hello Juan"
